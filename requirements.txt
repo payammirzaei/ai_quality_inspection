@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+PyJWT
+psycopg2-binary
+opencv-python
+Pillow
+torch
+torchvision
+numpy
+python-dotenv
+sqlalchemy
+passlib[bcrypt] 
