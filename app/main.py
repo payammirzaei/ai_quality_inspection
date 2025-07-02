@@ -18,21 +18,27 @@ def read_root():
 def custom_openapi():
     if app.openapi_schema:
         return app.openapi_schema
+
     openapi_schema = get_openapi(
         title="AI Quality Inspection System API",
         version="1.0.0",
-        description="API for AI-Enhanced Quality Inspection System",
+        description="API for defect detection and report generation",
         routes=app.routes,
     )
+
     openapi_schema["components"]["securitySchemes"] = {
-        "BearerAuth": {
+        "HTTPBearer": {
             "type": "http",
-            "scheme": "bearer",
-            "bearerFormat": "JWT",
+            "scheme": "bearer"
         }
     }
-    # Only add security globally if you want ALL endpoints protected
-    # Otherwise, add security=[{"BearerAuth": []}] to each protected route
+
+    # Apply it globally (optional)
+    for path in openapi_schema["paths"]:
+        for method in openapi_schema["paths"][path]:
+            if "security" not in openapi_schema["paths"][path][method]:
+                openapi_schema["paths"][path][method]["security"] = [{"HTTPBearer": []}]
+
     app.openapi_schema = openapi_schema
     return app.openapi_schema
 
