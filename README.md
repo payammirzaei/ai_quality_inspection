@@ -1,7 +1,5 @@
 <!-- PROJECT LOGO -->
-<p align="center">
-  <img src="https://via.placeholder.com/600x150?text=AI+Quality+Inspection+System" alt="Project Logo" width="60%">
-</p>
+
 
 <h1 align="center">AI-Enhanced Quality Inspection System</h1>
 
