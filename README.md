@@ -16,7 +16,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup](#setup)
@@ -27,15 +27,15 @@
 
 ---
 
-## ✨ Features
-- 📷 RESTful APIs for image uploads, inspection, and defect reports
-- 🤖 PyTorch-based defect detection
-- 🖼️ Image preprocessing with OpenCV/PIL
-- 🔒 JWT-secured endpoints
-- 🗄️ PostgreSQL for user and defect data
-- ☁️ Azure deployment and monitoring
+## Features
+- RESTful APIs for image uploads, inspection, and defect reports
+- PyTorch-based defect detection
+- Image preprocessing with OpenCV/PIL
+- JWT-secured endpoints
+- PostgreSQL for user and defect data
+- Azure deployment and monitoring
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Python 3.10**
 - **FastAPI**
 - **PyTorch**
@@ -45,7 +45,7 @@
 - **Docker**
 - **JWT Authentication**
 
-## 🚀 Setup
+## Setup
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/ai_quality_inspection.git
@@ -71,11 +71,11 @@
    uvicorn app.main:app --reload
    ```
 
-## 📦 Usage
+## Usage
 - Access the API docs at: [http://localhost:8000/docs](http://localhost:8000/docs)
 - Upload images, inspect for defects, and generate reports via the API endpoints.
 
-## 📚 API Overview
+## API Overview
 - `POST /upload` — Upload an image for inspection
 - `POST /inspect` — Run AI-based defect detection
 - `GET /reports` — Retrieve inspection reports
@@ -83,6 +83,6 @@
 
 > For detailed API usage, see the [API documentation](http://localhost:8000/docs) after running the server.
 
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
 
